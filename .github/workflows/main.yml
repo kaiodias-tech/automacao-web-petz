@@ -41,9 +41,9 @@ jobs:
     - run: npx cypress run
      
     # relatorios mocha
-    - run: npm run report:merge
+    - run: chmod +x npm run report:merge
     
-    - run: npm run report:mocha
+    - run: chmod +x npm run report:mocha
     
      # Publicar relatorio em html
     - name: Deploy to GitHubPages
