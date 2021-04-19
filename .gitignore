@@ -5,3 +5,5 @@ cypress/videos
 cypress/screenshots
 
 mochawesome-report
+
+.DS_Store
