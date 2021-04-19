@@ -38,7 +38,7 @@ jobs:
     - run: npm install  
       
      # executar os testes usando o cucumber
-    - run: npx cy run
+    - run: npx cypress run
      
      # Gerar o relatorio em html
     - run: npm run report:merge
