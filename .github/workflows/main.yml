@@ -40,8 +40,9 @@ jobs:
      # executar os testes usando o cucumber
     - run: npx cypress run
      
-     # Gerar o relatorio em html
+    # relatorios mocha
     - run: npm run report:merge
+    
     - run: npm run report:mocha
     
      # Publicar relatorio em html
