@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-19T03:10:12.006Z",
+    "end": "2021-04-19T03:11:21.792Z",
+    "duration": 69786,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c8c5849d-594d-4f4b-bb02-3fbc422c86ae",
+      "title": "",
+      "fullFile": "cypress/integration/compras.spec.js",
+      "file": "cypress/integration/compras.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cf9e431e-23a4-4ac6-ae72-319e0782f567",
+          "title": "Compra",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Compras - Simples ",
+              "fullTitle": "Compra Compras - Simples ",
+              "timedOut": null,
+              "duration": 69747,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisando o produto\ncy.get('.inputPesquisa').type('ração');\ncy.get('.button-search').click();\ncy.wait(1000); // Escolhendo o produto\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"ração\"');\ncy.get('a[data-idproduto=\"71805\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Ração Royal Canin Maxi - Cães Adultos - 15kg - 15kg'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 249,19');\ncy.screenshot();",
+              "err": {},
+              "uuid": "f1b1027c-c088-4940-b48e-412b52ed6f9f",
+              "parentUUID": "cf9e431e-23a4-4ac6-ae72-319e0782f567",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f1b1027c-c088-4940-b48e-412b52ed6f9f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 69747,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

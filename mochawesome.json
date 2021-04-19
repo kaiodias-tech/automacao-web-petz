@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-19T03:04:15.047Z",
+    "end": "2021-04-19T03:07:49.786Z",
+    "duration": 214739,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d96b3dd9-7fe9-4b42-affe-15e5bfba6bff",
+      "title": "",
+      "fullFile": "cypress/integration/compras_massa.spec.js",
+      "file": "cypress/integration/compras_massa.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0efb5cd8-394e-45fa-84e7-b766a4a466b9",
+          "title": "Compra",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Compras com Massa de Testes - Produto 3",
+              "fullTitle": "Compra Compras com Massa de Testes - Produto 3",
+              "timedOut": null,
+              "duration": 87820,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisa do produto através da massa de testes\ncy.fixture('produtos').then(user => {\n  cy.get('.inputPesquisa').type(user.produto3);\n}); //Pesquisando o produto\ncy.get('.button-search').click(); //Validando o tipo de pesquisa\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"coleira\"'); //Escolhendo o produto através do resultado\ncy.get('a[data-idproduto=\"151823\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Coleira Petz Azul para Gatos'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 29,99');\ncy.screenshot();",
+              "err": {},
+              "uuid": "f96578dc-53eb-481d-9b2d-2b6eef3e1faa",
+              "parentUUID": "0efb5cd8-394e-45fa-84e7-b766a4a466b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Compras com Massa de Testes - Produto 1",
+              "fullTitle": "Compra Compras com Massa de Testes - Produto 1",
+              "timedOut": null,
+              "duration": 66066,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisa do produto através da massa de testes\ncy.fixture('produtos').then(user => {\n  cy.get('.inputPesquisa').type(user.produto1);\n}); //Pesquisando o produto\ncy.get('.button-search').click(); //Validando o tipo de pesquisa\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"tapete\"'); //Escolhendo o produto através do resultado\ncy.get('a[data-idproduto=\"162342\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Tapete Petz Limpa Patas para Gatos'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 59,99');\ncy.screenshot();",
+              "err": {},
+              "uuid": "eec12b4b-19eb-4653-85c1-457dbf87aae5",
+              "parentUUID": "0efb5cd8-394e-45fa-84e7-b766a4a466b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Compras com Massa de Testes - Produto 8",
+              "fullTitle": "Compra Compras com Massa de Testes - Produto 8",
+              "timedOut": null,
+              "duration": 60714,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisa do produto através da massa de testes\ncy.fixture('produtos').then(user => {\n  cy.get('.inputPesquisa').type(user.produto8);\n}); //Pesquisando o produto\ncy.get('.button-search').click(); //Validando o tipo de pesquisa\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"snack\"'); //Escolhendo o produto através do resultado\ncy.get('a[data-idproduto=\"154716\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Snack Petz Acerola, Graviola e Banana para Cães'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 5,99');\ncy.screenshot();",
+              "err": {},
+              "uuid": "0d377df3-137f-4430-ad64-c41e85189a74",
+              "parentUUID": "0efb5cd8-394e-45fa-84e7-b766a4a466b9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f96578dc-53eb-481d-9b2d-2b6eef3e1faa",
+            "eec12b4b-19eb-4653-85c1-457dbf87aae5",
+            "0d377df3-137f-4430-ad64-c41e85189a74"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 214600,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
