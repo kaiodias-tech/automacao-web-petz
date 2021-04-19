@@ -1,0 +1,23 @@
+{
+  "name": "DESAFIO-PETZ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "report:merge": "mochawesome-merge > index.json",
+    "report:mocha": "marge index.json",
+    "report:clean": "rimraf mochawesome-report index.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "7.1.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}
