@@ -4,8 +4,8 @@ node_modules
 cypress/videos
 cypress/screenshots
 
-node_modules
 mochawesome-report
+node_modules
 index.json
 
 .DS_Store
