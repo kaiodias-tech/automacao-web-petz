@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-04-19T18:11:28.866Z",
-    "end": "2021-04-19T18:12:06.981Z",
-    "duration": 38115,
+    "start": "2021-04-20T00:36:41.390Z",
+    "end": "2021-04-20T00:37:19.300Z",
+    "duration": 37910,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e0a32821-3099-4f86-a963-a5377b489d6d",
+      "uuid": "af58bfa9-916b-4be2-876d-ae9a6d3985cd",
       "title": "",
       "fullFile": "cypress/integration/compras.spec.js",
       "file": "cypress/integration/compras.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3e283b08-7ad5-488e-960f-72257ffc3c0d",
+          "uuid": "5e8582ce-4981-4b73-8a0b-a0cf8d493095",
           "title": "Compra",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Compras - Simples ",
               "fullTitle": "Compra Compras - Simples ",
               "timedOut": null,
-              "duration": 38085,
+              "duration": 37886,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisando o produto\ncy.get('.inputPesquisa').type('ração');\ncy.get('.button-search').click();\ncy.wait(1000); // Escolhendo o produto\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"ração\"');\ncy.get('a[data-idproduto=\"71805\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Ração Royal Canin Maxi - Cães Adultos - 15kg - 15kg'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 249,19');\ncy.screenshot();",
               "err": {},
-              "uuid": "73ca9284-a687-47a0-9180-3beb232e2810",
-              "parentUUID": "3e283b08-7ad5-488e-960f-72257ffc3c0d",
+              "uuid": "e6244541-7997-4cae-b410-a41a5fea0140",
+              "parentUUID": "5e8582ce-4981-4b73-8a0b-a0cf8d493095",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "73ca9284-a687-47a0-9180-3beb232e2810"
+            "e6244541-7997-4cae-b410-a41a5fea0140"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 38085,
+          "duration": 37886,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
