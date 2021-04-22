@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-04-20T00:42:47.195Z",
-    "end": "2021-04-20T00:43:23.309Z",
-    "duration": 36114,
+    "start": "2021-04-22T04:29:07.785Z",
+    "end": "2021-04-22T04:29:22.719Z",
+    "duration": 14934,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4de4bea4-051d-45ba-ba6e-73ddd1ea973d",
+      "uuid": "b5593d74-89c1-47ad-bd8e-2fe50d33c9da",
       "title": "",
       "fullFile": "cypress/integration/compras.spec.js",
       "file": "cypress/integration/compras.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "45284aa2-d91c-4714-be8f-d21131801060",
+          "uuid": "27d71470-a272-4c84-8312-242068556870",
           "title": "Compra",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Compras - Simples ",
               "fullTitle": "Compra Compras - Simples ",
               "timedOut": null,
-              "duration": 36044,
+              "duration": 14871,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisando o produto\ncy.get('.inputPesquisa').type('ração');\ncy.get('.button-search').click();\ncy.wait(1000); // Escolhendo o produto\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"ração\"');\ncy.get('a[data-idproduto=\"71805\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Ração Royal Canin Maxi - Cães Adultos - 15kg - 15kg'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 249,19');\ncy.screenshot();",
+              "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisando o produto\ncy.get('.inputPesquisa').type('ração');\ncy.get('.button-search').click();\ncy.wait(1000); // Escolhendo o produto\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"ração\"');\ncy.get('a[data-idproduto=\"71805\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Ração Royal Canin Maxi - Cães Adultos - 15kg - 15kg'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 249,99');\ncy.screenshot();",
               "err": {},
-              "uuid": "e24014cc-9980-4d20-9be7-f2a5798e4933",
-              "parentUUID": "45284aa2-d91c-4714-be8f-d21131801060",
+              "uuid": "7b83c3b0-ffb1-4a5b-a415-2ff2a2c31cd5",
+              "parentUUID": "27d71470-a272-4c84-8312-242068556870",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e24014cc-9980-4d20-9be7-f2a5798e4933"
+            "7b83c3b0-ffb1-4a5b-a415-2ff2a2c31cd5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 36044,
+          "duration": 14871,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
