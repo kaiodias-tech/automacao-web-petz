@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-04-22T04:28:14.400Z",
-    "end": "2021-04-22T04:28:56.140Z",
-    "duration": 41740,
+    "start": "2021-04-22T15:48:27.716Z",
+    "end": "2021-04-22T15:49:35.190Z",
+    "duration": 67474,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "952dd451-5d77-4855-9250-b5c15d1e6b60",
+      "uuid": "b503d9bc-91d5-416d-a5ea-2fb1138236b5",
       "title": "",
       "fullFile": "cypress/integration/compras_massa.spec.js",
       "file": "cypress/integration/compras_massa.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e71e5519-b0cc-4e2b-8622-0499f8ae776a",
+          "uuid": "7e7840c3-3934-4f22-b0e6-bc71177df008",
           "title": "Compra",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Compras com Massa de Testes - Produto 3",
               "fullTitle": "Compra Compras com Massa de Testes - Produto 3",
               "timedOut": null,
-              "duration": 15722,
+              "duration": 24044,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisa do produto através da massa de testes\ncy.fixture('produtos').then(function (user) {\n  cy.get('.inputPesquisa').type(user.produto3);\n}); //Pesquisando o produto\ncy.get('.button-search').click(); //Validando o tipo de pesquisa\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"coleira\"'); //Escolhendo o produto através do resultado\ncy.get('a[data-idproduto=\"151823\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Coleira Petz Azul para Gatos'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 29,99');\ncy.screenshot();",
               "err": {},
-              "uuid": "ce8848f5-c296-4e00-ade6-6b94cd692a03",
-              "parentUUID": "e71e5519-b0cc-4e2b-8622-0499f8ae776a",
+              "uuid": "4ad40cd3-b069-4fbc-a945-c6de03512ead",
+              "parentUUID": "7e7840c3-3934-4f22-b0e6-bc71177df008",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Compras com Massa de Testes - Produto 1",
               "fullTitle": "Compra Compras com Massa de Testes - Produto 1",
               "timedOut": null,
-              "duration": 12811,
+              "duration": 18138,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisa do produto através da massa de testes\ncy.fixture('produtos').then(function (user) {\n  cy.get('.inputPesquisa').type(user.produto1);\n}); //Pesquisando o produto\ncy.get('.button-search').click(); //Validando o tipo de pesquisa\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"tapete\"'); //Escolhendo o produto através do resultado\ncy.get('a[data-idproduto=\"162342\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Tapete Petz Limpa Patas para Gatos'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 59,99');\ncy.screenshot();",
               "err": {},
-              "uuid": "bce38e89-af66-413c-ada9-b050e013f932",
-              "parentUUID": "e71e5519-b0cc-4e2b-8622-0499f8ae776a",
+              "uuid": "fa4608ae-fad8-4ad1-b63f-d2ead70f8bdb",
+              "parentUUID": "7e7840c3-3934-4f22-b0e6-bc71177df008",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Compras com Massa de Testes - Produto 8",
               "fullTitle": "Compra Compras com Massa de Testes - Produto 8",
               "timedOut": null,
-              "duration": 13062,
+              "duration": 25144,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.visit('/');\ncy.get('div[class^=\"login\"]').should('contain.text', 'Olá, Entre '); //Pesquisa do produto através da massa de testes\ncy.fixture('produtos').then(function (user) {\n  cy.get('.inputPesquisa').type(user.produto8);\n}); //Pesquisando o produto\ncy.get('.button-search').click(); //Validando o tipo de pesquisa\ncy.get('[class$=\"nomeCategoria\"]').should('contain.text', 'resultados para \"snack\"'); //Escolhendo o produto através do resultado\ncy.get('a[data-idproduto=\"154716\"]').click(); //Adicionando o produto no carrinho de compras\ncy.get('button[class$=\"btn-redondo-verde\"]').click(); //Validando se o produto está na tela Meu Carrinho\ncy.get('th[class=\"minha-sacola\"]').should('contain.text', 'Meu Carrinho'); //Validação do produto no carrinho\ncy.get('td[class=\"td-resumo\"]').should('contain.text', 'Snack Petz Acerola, Graviola e Banana para Cães'); //Validação da Quantidade\ncy.get('input[value=\"1\"]').should('contain.value', '1'); //Validação do Valor Total\ncy.get('td[class=\"total\"]').should('contain.text', 'R$ 5,99');\ncy.screenshot();",
               "err": {},
-              "uuid": "70bd214f-cc52-4614-8208-6fda13dce941",
-              "parentUUID": "e71e5519-b0cc-4e2b-8622-0499f8ae776a",
+              "uuid": "4faecc54-195b-4783-b79e-fc54ed740eda",
+              "parentUUID": "7e7840c3-3934-4f22-b0e6-bc71177df008",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ce8848f5-c296-4e00-ade6-6b94cd692a03",
-            "bce38e89-af66-413c-ada9-b050e013f932",
-            "70bd214f-cc52-4614-8208-6fda13dce941"
+            "4ad40cd3-b069-4fbc-a945-c6de03512ead",
+            "fa4608ae-fad8-4ad1-b63f-d2ead70f8bdb",
+            "4faecc54-195b-4783-b79e-fc54ed740eda"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 41595,
+          "duration": 67326,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
