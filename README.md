@@ -9,9 +9,11 @@
 <li>Linux Ubuntu 12.04 e superior, Fedora 21 e Debian 8 (somente 64 bits)</li>
 <li>Windows 7 e superior</li>
 </ul>
-1.2 - Node.js
+1.2 - Arquitetura do Projeto
 <ul>
-<li>Node.js 10 ou 12 e superior</li>
+<li>Cypress@5.3.0</li>
+<li>NodeJs v14.15.3</li>
+<li>NPM 6.14.9</li>
 </ul>
 <h3>2 - Como instalar os Cypress e as dependências do projeto</h3>
 <b>Executar no terminal o comando abaixo dentro da pasta do projeto</b>
