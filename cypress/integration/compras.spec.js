@@ -30,7 +30,7 @@ context('Compra', () => {
         cy.get('input[value="1"]').should('contain.value', '1');
 
         //Validação do Valor Total
-        cy.get('td[class="total"]').should('contain.text', 'R$ 249,19');
+        cy.get('td[class="total"]').should('contain.text', 'R$ 249,99');
         cy.screenshot();
 
     });
